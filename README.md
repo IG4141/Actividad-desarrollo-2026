@@ -1,6 +1,4 @@
-# Actividad 2026 - Relaciones entre Clases y Rendimiento
-
-## 1. Implementación local
+#### Ivo Giuliano Cappetto
 
 La actividad fue desarrollada localmente en el archivo:
 
@@ -65,18 +63,9 @@ planificarMantenimiento(tecnico)
 
 ---
 
-## 4. Publicación en GitHub
-
-El repositorio incluye:
-
-* Código fuente en `dist/ejercicio1.js`
-* Documentación en `README.md`
-
----
-
 ## 5. Diferencia en tiempo de ejecución: Composición vs Agregación
 
-Se incorporó un benchmark en `dist/ejercicio1.js`.
+Se incorporó un benchmark en `dist/ejercicio1.js` para comparar ambas estrategias.
 
 ### Configuración utilizada
 
@@ -87,21 +76,13 @@ Se incorporó un benchmark en `dist/ejercicio1.js`.
 
 | Métrica         | Composición | Agregación |
 | --------------- | ----------- | ---------- |
-| Tiempo promedio | 37.11 ms    | 12.81 ms   |
-| Uso de memoria  | 61.08 MB    | 9.81 MB    |
+| Tiempo promedio | 74.09 ms    | 6.65 ms    |
+| Uso de memoria  | 59.22 MB    | 25.19 MB   |
 
-### Conclusión
+En esta ejecución, la agregación fue significativamente más rápida que la composición.
 
-La agregación fue más rápida y utilizó menos memoria, ya que reutiliza objetos existentes.
+La composición también consumió más memoria total, debido a la creación de nuevos objetos internos en cada instancia.
 
-La composición requirió crear nuevos objetos en cada iteración, aumentando el costo de procesamiento y memoria.
+La agregación, al reutilizar objetos existentes, redujo el tiempo de procesamiento y mejoró el rendimiento general.
 
 ---
-
-## 6. Evidencia de cumplimiento
-
-* Implementación funcional en entorno local.
-* Identificación correcta de jerarquías.
-* Uso de herencia, composición, agregación, asociación y dependencia.
-* Publicación del proyecto en GitHub.
-* Medición y análisis comparativo de rendimiento.
