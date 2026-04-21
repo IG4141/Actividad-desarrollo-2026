@@ -1,0 +1,13 @@
+{
+  "name": "aeroplano-actividad",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
