@@ -64,6 +64,13 @@ planificarMantenimiento(tecnico)
 ---
 
 ## 5. Diferencia en tiempo de ejecución: Composición vs Agregación
+La composición y la agregación no poseen una diferencia fija de tiempo de ejecución.
+
+La composición implica que los objetos internos dependen del objeto principal y suelen crearse o destruirse junto con él.
+
+La agregación permite que los objetos asociados existan de forma independiente y puedan reutilizarse.
+
+Por ello, el rendimiento depende de la implementación concreta, la cantidad de objetos creados, el uso de memoria y el lenguaje utilizado, más que del tipo de asociación en sí.
 
 Se incorporó un benchmark en `dist/ejercicio1.js` para comparar ambas estrategias.
 
